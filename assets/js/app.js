@@ -176,11 +176,7 @@ Vue.component('message-toast', {
 
 Vue.component('modeswitch', {
   template: '#mode-template',
-  data: function() {
-    return {
-      state: store.state // global state
-    };
-  },
+  props: ['state'],
   computed: {
     mode: {
       get: function() {
